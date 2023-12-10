@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-code-with-quarkus-pmcy
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads-stage/test-rhtap-30-tenant/test-rhtap-30-app/devfile-sample-code-with-quarkus-pmcy@sha256:25e8085a78cfb8c23a86938cb54540935951a3ea3d480a42c81f5ea2e81c9a4d
+        name: my-java-quarkus
+        resources: {}
+status: {}
